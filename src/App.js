@@ -12,7 +12,7 @@ function App() {
     homeValue: defaultHomeValue,
     downPayment: defaultHomeValue * 0.2,
     loanAmount: defaultHomeValue * 0.8,
-    loanTerm: 3000,
+    loanTerm: 5,
     interestRate: 5,
   });
   return (
@@ -25,7 +25,7 @@ function App() {
             <TenureSelect data={data} setData={setData} />
           </Grid>
           <Grid item xs={12} md={6}>
-            <Result />
+            <Result data={data}/>
           </Grid>
         </Grid>
       </Container>
